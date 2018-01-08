@@ -1,0 +1,297 @@
+@charset "UTF-8";
+/* CSS Document
+
+
+body {
+font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+
+h2 {
+	color: #004cce;
+}
+
+td a:link, .email:link{
+	color: #3c40a1;
+	text-decoration: none;
+}
+
+td a:visited, .email:visited{
+	color: #3c40a1;
+	text-decoration: none;
+}
+
+td a:hover, .email:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+td a:active{ 
+	text-decoration: none;
+	color: #000000;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #000000;
+}
+
+a:visited {
+	color: #000000;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+a:active {
+	color: #000000;
+}
+
+.banner {
+	text-align: center;
+}
+
+.container {
+	text-align: center;
+	margin: 0 auto; 
+}
+
+.content {
+	width: 40%;
+	float: left;
+	text-align: center;
+}
+
+.centriq {
+	float: left;
+	padding-left: 22%;
+	padding-top: 4.5%;
+}
+
+.caps {
+	float: right;
+	padding-right: 19%;
+	padding-top:3%;
+}
+
+.companies {
+	padding-top: 5%;
+	width: 100%;
+	float: left;
+
+}
+
+.dst {
+	float: left;
+	padding-left: 25%;
+	padding-top: 3%;
+}
+
+.footer {
+	padding-top: 3%;
+	position: relative;
+	clear: both;
+	width: 100%;
+}
+
+.footer td {
+	font-size: 12px;
+	text-align: center;
+}
+
+.footer th {
+	font-size: 12px;
+	text-align: center;
+}
+
+.form {
+	text-align: left;
+}
+
+.form p {
+	width: 50%;
+}
+
+.grand {
+	float: right;
+	padding-right: 25%;
+	padding-top: 2.5%;
+}
+
+.header {
+	width:100%;
+	float: left;
+	text-align:center;
+}
+
+.image {
+	-webkit-box-shadow: 0px 10px 10px #000;
+	-moz-box-shadow: 0px 10px 10px #000;
+	-o-box-shadow: 0px 10px 10px #000;
+	box-shadow: 0px 10px 10px #000;
+}
+
+.knoda {
+	float:right;
+	padding-right: 25%;
+	padding-top: 2.5%;
+}
+
+.kcwit {
+	float: right;
+	padding-right: 25%;
+	padding-top: 3%;
+}
+
+.kcnext {
+	float: left;
+	padding-left: 21%;
+	padding-top: 3%;
+}
+
+.kcdc {
+	float: right;
+	padding-right: 27%;
+}
+
+.mu {
+	float:right;
+	padding-right:25%;
+	padding-top:3%;
+}
+
+.midcontinent {
+	float: left;
+	padding-left: 23%;
+	padding-top: 3%;
+}
+
+
+.navbar li {
+	text-align:center;
+	font-family: sans-sarif, Verdana, Arial;
+	font-size: 40px;
+	float: center;
+		
+	background: #808080;
+}
+
+.navbar li a {
+	font-size: 20px;
+	display: block;
+}
+
+.navbar {
+	top: 30%;
+    margin:0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+    text-align:center;
+}
+
+.park {
+	float: right;
+	padding-right: 25%;
+	padding-top: 3%;
+}
+
+.robots {
+	float: left;
+	padding-left: 25%;
+	padding-top: 3%;
+}
+
+.schedule {
+	width: 100%;
+	float:right;
+	padding-top: 4%;
+}
+
+.schedule_pic {
+	
+}
+
+.slideshow {
+	 float: right; 
+	 width: 50%; 
+	 height: 40%; 
+}
+
+.speakers {
+	width: 100%;
+	float: left;
+
+}
+
+.speaker1 {
+	width: 50%;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.speaker1_bio {
+	width:50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.speaker2 {
+	width: 50%;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.speaker2_bio {
+	width:50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.t4t {
+	text-align:center;
+}
+
+.unit {
+	padding:10px 10px 10px 10px;
+	text-decoration:none;
+	text-align:center;
+}
+
+.ucm {
+	float: right;
+	padding-right: 25%;
+	padding-top: 3%;
+}
+
+.umkc {
+	float: left;
+	padding-left: 25%;
+}
+
+*/
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+.header {
+	display: block;
+	background-color: white;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	
+}

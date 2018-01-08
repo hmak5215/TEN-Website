@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>TEN</title>
+<link rel="stylesheet" type="text/css" href="styles_tech.css"/>
+<script type="text/javascript" src="slideshow_technight.js">
+</script>
+</head>
+
+<body> 
+<!-- Div to dictate the size of the page -->
+<div class="container">
+<!-- Div for the image in header -->
+		<div class="header">
+			<a href="home.html"><img src="ten.png" alt="TEN" name="Insert_logo"  width="40%" id="Insert_logo"/></a> 
+			<br/>
+		</div>
+<!-- Div for the left sidebar that includes navigation -->
+		<div class="navbar">
+		<ul>
+		<li><a href="home.html" class="unit"><strong>Home</strong></a></li>
+		<li><a href="vendorsandpresenters.html"<a class="unit"><strong>Organizations Attending</strong></a></li>
+		<li><a href="tsa.html" class="unit"><strong>TSA</strong></a></li>
+		<li><a href="pltw.html" class="unit"><strong>PLTW</strong></a></li>
+		<li><a href="register.html" class="unit"><strong>Register</strong></a></li>
+		</ul>
+		</div>
+<!-- Div for information in middle of page -->
+		<div class="container">	
+			<div class="content"  style="text-align:center; width:100%;">
+			<br/><br/> <br/>
+			<h3> We want to be prepared for everyone.  Please help us by completing our
+			     registration form.  Thank you.
+			</h3>     
+				<h2>
+				<div><a href="RSVP.php">Organization Registration</a>  </div>
+				<br/><br/><br/><br/><br/>
+				</div>
+<!-- each image links to webpage of the sponsor -->
+<!-- Div for the footer with contact info and credit-->
+		<div class="footer">
+			<table>
+				<tr> 
+					<td width="20%">For more information, please contact Colleen Jones at (816)736-5320 or <a href="mailto:cjones@liberty.k12.mo.us">cjones@liberty.k12.mo.us</a</td>
+					<td width="60%">
+						<h5>Sponsored by:</h5>
+						<a href="http://www.liberty.k12.mo.us/" target="_blank"><img src="lps-logo.jpg" alt=" Liberty Public Schools" width="55" height="50"/></a>
+						<a href="http://web.liberty.k12.mo.us/hs/lhswebsite/klein/tsa/tsa.html" target="_blank"><img src="tsalnhs.png" alt="TSA" width="55" height="50"/></a>					
+						<a href="http://www.jewell.edu/" target="_blank"><img src="wjc.jpg" alt="William Jewell College" width="55" height="50"/></a>
+						<a href="https://www.pltw.org/" target="_blank"><img src="pltw.jpg" alt="PLTW" width="55" height="50"/></a>
+					</td>
+					<td width="20%">Website created by <br/><a href="https://ln-lps-ca.schoolloop.com/">Liberty & Liberty North High School students</a></td>
+				</tr>
+			</table>
+		</div>
+<!-- Closing container Div-->
+	<script type="text/javascript">
+		<!--
+		//variable that will increment through the images
+			var step=1
+			function slideit(){
+		//if browser does not support the image object, exit.
+			if (!document.images)
+				return
+				document.images.slide.src=eval("image"+step+".src")
+			if (step<12)
+				step++
+			else
+				step=1
+		//call function "slideit()" every 2.5 seconds
+			setTimeout("slideit()",2000)
+			}
+			slideit()
+		//-->
+</script>
+</div>
+</body>
+</html>
