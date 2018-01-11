@@ -5,69 +5,106 @@
 		<title>TEN</title>
 		<link rel="stylesheet" type="text/css" href="styles.css"/>
 		<script type="text/javascript" src="Scripts/imageHover.js"></script>
+		<script type="text/javascript" src="Scripts/smallMenu.js"></script>
+		<script type="text/javascript" src="Scripts/mobileMenu.js"></script>
 	</head>
 
 	<body> 
+		<div id="content_wrapper">
 		<div id="header">
 			<a href="home.html"><img src="Images/TENlogo.png" alt="TEN Logo" id="header_image" onmouseover="hover(this)" onmouseout="unhover(this)" /></a>
 			
+			<div id="mobile_menu">
+				<div id="mobile_icon" onClick="mobileMenuClicked(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+				<ul id="mobile_menu_content">
+					<li><a href="#">Home</a></li>
+					<li><a href="#organizations">Organizations</a></li>
+					<li><a href="#tsa">TSA</a></li>
+					<li><a href="#pltw">PLTW</a></li>
+					<li><a href="#register">Register</a></li>
+				</ul>
+			</div>
+			
+			<div id="small_menu" onClick="menuClicked(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div id="SideNav" class="sidenav">
+				<a href="#">Home</a>
+				<a href="#organizations">Organizations</a>
+				<a href="#tsa">TSA</a>
+				<a href="#pltw">PLTW</a>
+				<a href="#register">Register</a>
+			</div>
+			
 			<div id="navigation">
 				<ul>
-					<li><a href="#main_content">Home</a></li>
-					<li><a href="#main_content">Organizations</a></li>
-					<li><a href="#main_content">TSA</a></li>
-					<li><a href="#main_content">PLTW</a></li>
-					<li><a href="#main_content">Register</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#organizations">Organizations</a></li>
+					<li><a href="#tsa">TSA</a></li>
+					<li><a href="#pltw">PLTW</a></li>
+					<li><a href="#register">Register</a></li>
 				</ul>
 			</div>
 		</div>
 		
 		<div id="main_content">
-			<h2 class="content_heading">What is TEN?</h2>
-			<p>
-				TEN is an opportunity for elementary to high school students to have fun with technology. Students can also learn about the possibilities of technology and engineering based careers.
-			</p>
-			<p>
-				The event also seeks to inform parents about how these fields can be beneficial to their child for more than just a career.
-			</p>
-			<p>
-				Learning about technology can foster possible life skills that will help them in any field they choose.
-			</p>
-			<p>
-				The evening will also showcase projects by LPS students from Project Lead The Way(PLTW) and Technology Student Association (TSA)
-			</p>
+			<div id="ten">
+				<h2 class="content_heading">What is TEN?</h2>
+				<p>
+					TEN is an opportunity for elementary to high school students to have fun with technology. Students can also learn about the possibilities of technology and engineering based careers.
+				</p>
+				<p>
+					The event also seeks to inform parents about how these fields can be beneficial to their child for more than just a career.
+				</p>
+				<p>
+					Learning about technology can foster possible life skills that will help them in any field they choose.
+				</p>
+				<p>
+					The evening will also showcase projects by LPS students from Project Lead The Way(PLTW) and Technology Student Association (TSA)
+				</p>
+				
+				<h2 class="content_heading">When is TEN?</h2>
+				<p>
+					Tuesday, May 2nd<br />
+					6:00pm-8:00pm<br />
+					Liberty North High School<br />
+					1000 NE 104 Street, Liberty, MO 64068
+				</p>
+			</div>
 			
-			<h2 class="content_heading">When is TEN?</h2>
-			<p style="text-align: center">
-				Tuesday, May 2nd<br />
-				6:00pm-8:00pm<br />
-				Liberty North High School<br />
-				1000 NE 104 Street, Liberty, MO 64068
-			</p>
+			<div id="organizations">
+				<h2 class="content_heading">Organizations Attending</h2>
+				
+				
+			</div>
+			
+			<div id="tsa">
+				<h2 class="content_heading">What is TSA?</h2>
+				
+				<p>
+					TSA (Technology Student Organization)chapters take the study of STEM (science, technology, engineering, mathematics) beyond the classroom and give students the chance to pursue academic challenges among friend with similar goals and interests. Together, chapter members work on competitive events, attend conferences on the state and national levels and have a good time raising funds to get there. Chapter organization develops leadership, as members may become officers within their state and then run nationally. Our chapters are committed to a national service project and are among the most service-orientated groups in the community.
+				</p>
+			</div>
+			
+			<div id="pltw">
+				<h2 class="content_heading">What is PLTW?</h2>
+				
+				<p>
+					Project Lead the Way provides transformative learning experiences for K-12 students and teachers across the United States. Liberty Public Schools offers pathways in engineering and biomedical science that engage students in hands-on activities, projects, and problems. These empower students to solve real-world challenges and inspire students to reimagine how they see themselves. 
+				</p>
+			</div>
+			
+			<div id="register">
+				<h2 class="content_heading">Registration</h2>
+				
+			</div>
 		</div>
-		
-		<div id="organizations">
-			<h2 class="content_heading">Organizations Attending</h2>
-			
-			
-		</div>
-		
-		<div id="tsa">
-			<h2 class="content_heading">What is TSA?</h2>
-			
-			<p>
-				TSA (Technology Student Organization)chapters take the study of STEM (science, technology, engineering, mathematics) beyond the classroom and give students the chance to pursue academic challenges among friend with similar goals and interests. Together, chapter members work on competitive events, attend conferences on the state and national levels and have a good time raising funds to get there. Chapter organization develops leadership, as members may become officers within their state and then run nationally. Our chapters are committed to a national service project and are among the most service-orientated groups in the community.
-			</p>
-		</div>
-		
-		<div id="pltw">
-			<h2 class="content_heading">What is PLTW?</h2>
-			
-		</div>
-		
-		<div id="register">
-			<h2 class="content_heading">Registration</h2>
-			
-		</div>
+	</div>
 	</body>
 </html>
