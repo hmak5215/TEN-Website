@@ -1,41 +1,3 @@
-<?php
-	$recipients = "angie.klein@lps53.org,colleen.jones@lps53.org";
-	
-	$subject = "Contact Form";
-	$mailheader = "From: ten@lps53.org \r\n";
-	
-	if (isset($_POST['submit'])) {
-		$name = filter_input(INPUT_POST, 'name');
-		$organization = filter_input(INPUT_POST, 'organization');
-		$desctiption = filter_input(INPUT_POST, 'description');
-		$website = filter_input(INPUT_POST, 'website');
-		$activities = filter_input(INPUT_POST, 'acivities');
-		$requirements = filter_input(INPUT_POST, 'requirements');
-		$description = filter_input(INPUT_POST, 'description');
-		$email = filter_input(INPUT_POST, 'email');
-		$phoneNumber = filter_input(INPUT_POST, 'phone');
-		
-		$phoneType;
-		
-		$emailContent = "
-		Name: " . $name . " \n 
-		Organization: " . $organization . " \n 
-		Description: " . $description . " \n 
-		Website: " . $website . " \n
-		What they will be doing: " . $activities . " \n 
-		Phone no: " . $phoneNumber . " \n  
-		Requirement: " . $requirements . " \n
-		Email: " . $email;
-		
-		mail($recipients, $subject, $emailContent, $mailheader) or die("Error!");
-		
-		
-		echo "<span style='font-family: Verdana, Arial, Helvetica, sans-serif;color:#5C5C5C'>Thank You!" . " -" . "<a href='home.html' style='text-decoration:none;color:#1A8CFF;'> Return Home</a></span>";
-	}
-?>
-
-
-
 <!doctype html>
 <html>
 	<head>
@@ -46,8 +8,7 @@
 	</head>
 
 	<body>
-		<?php echo $error ?>
-		<form method="post">
+		<form>
 			<h2 class="header">Company Registration</h2>
 			<p>
 				To reserve your spot, please fill out the form below with all the correct information. We will send out a newsletter to help spread the word of your company.

@@ -1,0 +1,117 @@
+/* CSS Document */
+
+form {
+	max-width:400px;
+	background:#fff;
+	margin:50px auto;
+    border-radius:2px;
+    padding:20px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+form .header {
+	display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 10px 0px;
+    color: #5C5C5C;
+	font-size: 20px;
+}
+
+form p {
+	color: #707070;
+}
+
+form ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+form li {
+	display: block;
+	padding: 9px;
+	border:1px solid #DDDDDD;
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+
+form li:last-child {
+	border: none;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+form li > label {
+	display: block;
+	float: left;
+	background: #FFFFFF;
+	margin-top: -19px;
+	height: 14px;
+	padding: 2px 5px 2px 5px;
+	color: #A6A6A6;
+	font-size: 14px;
+    overflow: hidden;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="datetime"],
+form input[type="email"],
+form input[type="number"],
+form input[type="search"],
+form input[type="time"],
+form input[type="url"],
+form input[type="password"],
+form textarea,
+form select 
+{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+}
+
+form li > span {
+	background: #F3F3F3;
+	display: block;
+	padding: 3px;
+	margin: 0 -9px -9px -9px;
+	text-align: center;
+	color: #AAA;
+	font-size: 11px;
+}
+
+form textarea {
+	resize:none;
+}
+
+form input[type="submit"],
+form input[type="button"] 
+{
+	background: #8F8F8F;
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 3px solid #7F7D7D;
+	border-radius: 3px;
+	color: #E6E6E6;
+}
+
+form input[type="submit"]:hover,
+form input[type="button"]:hover 
+{
+	background: #AFAFAF;
+	color:#fff;
+	border-bottom-color: #909090;
+	cursor: pointer;
+}

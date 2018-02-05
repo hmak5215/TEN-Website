@@ -7,10 +7,16 @@
 		<script type="text/javascript" src="Scripts/imageHover.js"></script>
 		<script type="text/javascript" src="Scripts/smallMenu.js"></script>
 		<script type="text/javascript" src="Scripts/mobileMenu.js"></script>
+		<script type="text/javascript" src="Scripts/scrollToHome.js"></script>
+		<script type="text/javascript" src="Scripts/scrollToOrganizations.js"></script>
+		<script type="text/javascript" src="Scripts/scrollToTSA.js"></script>
+		<script type="text/javascript" src="Scripts/scrollToPLTW.js"></script>
+		<script type="text/javascript" src="Scripts/scrollToRegistration.js"></script>
 	</head>
 
 	<body> 
 		<div id="content_wrapper">
+		
 		<div id="header">
 			<a href="home.html"><img src="Images/TENlogo.png" alt="TEN Logo" id="header_image" onmouseover="hover(this)" onmouseout="unhover(this)" /></a>
 			
@@ -21,11 +27,11 @@
 					<div class="bar3"></div>
 				</div>
 				<ul id="mobile_menu_content">
-					<li><a href="#">Home</a></li>
-					<li><a href="#organizations">Organizations</a></li>
-					<li><a href="#tsa">TSA</a></li>
-					<li><a href="#pltw">PLTW</a></li>
-					<li><a href="#register">Register</a></li>
+					<li><a href="javascript:HomeScroll()">Home</a></li>
+					<li><a href="javascript:OrganizationsScroll()">Organizations</a></li>
+					<li><a href="javascript:TSAScroll()">TSA</a></li>
+					<li><a href="javascript:PLTWScroll()">PLTW</a></li>
+					<li><a href="javascript:RegistrationScroll()">Register</a></li>
 				</ul>
 			</div>
 			
@@ -35,35 +41,36 @@
 				<div class="bar3"></div>
 			</div>
 			<div id="SideNav" class="sidenav">
-				<a href="#">Home</a>
-				<a href="#organizations">Organizations</a>
-				<a href="#tsa">TSA</a>
-				<a href="#pltw">PLTW</a>
-				<a href="#register">Register</a>
+				<a href="javascript:HomeScroll()">Home</a>
+				<a href="javascript:OrganizationsScroll()">Organizations</a>
+				<a href="javascript:TSAScroll()">TSA</a>
+				<a href="javascript:PLTWScroll()">PLTW</a>
+				<a href="javascript:RegistrationScroll()">Register</a>
 			</div>
 			
 			<div id="navigation">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#organizations">Organizations</a></li>
-					<li><a href="#tsa">TSA</a></li>
-					<li><a href="#pltw">PLTW</a></li>
-					<li><a href="#register">Register</a></li>
+					<li><a href="javascript:HomeScroll()">Home</a></li>
+					<li><a href="javascript:OrganizationsScroll()">Organizations</a></li>
+					<li><a href="javascript:TSAScroll()">TSA</a></li>
+					<li><a href="javascript:PLTWScroll()">PLTW</a></li>
+					<li><a href="javascript:RegistrationScroll()">Register</a></li>
 				</ul>
 			</div>
 		</div>
 		
 		<div id="main_content">
-			<div id="ten">
+			<div class="bgimage" id="firstimage"></div>
+			<div id="ten" class="textwrapper">
 				<h2 class="content_heading">What is TEN?</h2>
 				<p>
-					TEN is an opportunity for elementary to high school students to have fun with technology. Students can also learn about the possibilities of technology and engineering based careers.
+					TEN is an opportunity for elementary to high school students to have fun with technology. Students can learn about the possibilities of technology and engineering-based careers.
 				</p>
 				<p>
-					The event also seeks to inform parents about how these fields can be beneficial to their child for more than just a career.
+					The event seeks to inform parents about how these fields can be beneficial to their child for more than just a career.
 				</p>
 				<p>
-					Learning about technology can foster possible life skills that will help them in any field they choose.
+					Learning about technology can foster life skills that will help students in any field they choose.
 				</p>
 				<p>
 					The evening will also showcase projects by LPS students from Project Lead The Way(PLTW) and Technology Student Association (TSA)
@@ -71,20 +78,48 @@
 				
 				<h2 class="content_heading">When is TEN?</h2>
 				<p>
-					Tuesday, May 2nd<br />
+					Wednesday, March 21st<br />
 					6:00pm-8:00pm<br />
 					Liberty North High School<br />
 					1000 NE 104 Street, Liberty, MO 64068
 				</p>
 			</div>
 			
-			<div id="organizations">
+			<div class="bgimage" id="secondimage"></div>
+			<div id="organizations" class="textwrapper">
 				<h2 class="content_heading">Organizations Attending</h2>
 				
-				
+				<table align="center">
+					<tr>
+						<td>
+							<a href="#">
+								<img src="Images/robots.jpg" width="220" />
+							</a>
+						</td>
+						<td>
+							<a href="#">
+								<img src="Images/SMG.png" width="220" />
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#">
+								<img src="Images/tsalogo.png" width="220" />
+							</a>
+						</td>
+						<td>
+							<a href="#">
+								<img src="Images/tsalnhs.png" width="220" />
+							</a>
+						</td>
+					</tr>
+				</table>
+			</div>
 			</div>
 			
-			<div id="tsa">
+			<div class="bgimage" id="thirdimage"></div>
+			<div id="tsa" class="textwrapper">
 				<h2 class="content_heading">What is TSA?</h2>
 				
 				<p>
@@ -92,7 +127,8 @@
 				</p>
 			</div>
 			
-			<div id="pltw">
+			<div class="bgimage" id="fourthimage"></div>
+			<div id="pltw" class="textwrapper">
 				<h2 class="content_heading">What is PLTW?</h2>
 				
 				<p>
@@ -100,11 +136,42 @@
 				</p>
 			</div>
 			
-			<div id="register">
+			<div class="bgimage" id="fifthimage"></div>
+			<div id="register" class="textwrapper">
 				<h2 class="content_heading">Registration</h2>
-				
+				<p>
+					<a href="RSVP.php">Click here to fill out a registration form.</a>
+				</p>
+			</div>
+			
+			<div id="footer">
+				<table align="center">
+					<tr>
+						<td width="20%">
+							For more information, please contact Colleen Jones at (816)736-5320 or <a href="mailto:cjones@lps53.org">colleen.jones@lps53.org</a>
+						</td>
+						<td width="60%" align="center">
+							<h4>Sponsored by:</h4>
+							<a href="http://www.liberty.k12.mo.us/" target="_blank">
+								<img src="Images/lps-logo.jpg" alt="Liberty Public Schools" width="55" height="50" />
+							</a>
+							<a href="http://web.liberty.k12.mo.us/hs/lhswebsite/klein/tsa/tsa.html" target="_blank">
+								<img src="Images/tsalnhs.png" alt="T4t" width="55" height="50">
+							</a>
+							<a href="http://www.jewell.edu/" target="_blank">
+								<img src="Images/wjc.jpg" alt="William Jewell College" width="55" height="50">
+							</a>
+							<a href="https://www.pltw.org/" target="_blank">
+								<img src="Images/pltw.jpg" alt="PLTW" width="55" height="50">
+							</a>
+						</td>
+						<td width="20%">
+							<h4>Created by:</h4>
+							LHS Students
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
-	</div>
 	</body>
 </html>
